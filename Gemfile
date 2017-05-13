@@ -21,6 +21,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'devise', git: 'https://github.com/gogovan/devise.git', branch: 'rails-5.1'
 gem 'erubis'
 gem 'jquery-rails'
+gem 'devise-bootstrap-views'
+gem 'twitter-bootstrap-rails'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
