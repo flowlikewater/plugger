@@ -3,6 +3,7 @@ require "rails_helper"
 RSpec.describe "User signing up" do
   scenario "sucessfully" do
     visit new_user_registration_path
+    fill_in "Username", with: "Example User"
     fill_in "Email", with: "example@gmail.com"
     fill_in "Password", with: "password"
     fill_in "Password confirmation", with: "password"
