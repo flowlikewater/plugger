@@ -1,5 +1,8 @@
 <h1>MyApp</h1>
 
 <div class="posts">
-  <%= render "posts/post", obj: @posts %>
+  <% @posts.each do |post| %>
+    <%= post.user.username %>
+    <%= post.title %>
+  <% end %>
 </div>
