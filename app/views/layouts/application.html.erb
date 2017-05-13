@@ -10,10 +10,7 @@
 
   <body>
     <header>
-      <% if user_signed_in? %>
-        <%= current_user.email %>
-      <% end %>
-      <%= link_to "Write a story", new_post_path %>
+      <%= render 'layouts/header' %>
     </header>
 
     <p class="notice"><%= notice %></p>
