@@ -8,12 +8,12 @@
     <a class="navbar-brand" href="#">Plugger</a>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Write a story", new_post_path, class: "button"%></li>
+        <li class='new-story-button'><%= link_to "Write a story", new_post_path, class: "button"%></li>
         <% if user_signed_in? %>
-          <li><%= link_to(avatar_for(current_user, size: 35), current_user) %></li>
-          <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "button" %></li>
+          <li class='current-user-avatar'><%= link_to(avatar_for(current_user, size: 36), current_user) %></li>
+          <li class='sign-in-up-button'><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "button" %></li>
         <% else %>
-          <li><%= link_to "Sign in / Sign up", new_user_session_path, class: "button" %></li>
+          <li class='sign-in-up-button'><%= link_to "Sign in / Sign up", new_user_session_path, class: "button" %></li>
         <% end %>
       </ul>
     </div>
