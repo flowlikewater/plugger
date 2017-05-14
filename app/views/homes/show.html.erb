@@ -5,7 +5,7 @@
     <% @posts.each do |post| %>
       <div class='post-panel'>
         <%= avatar_for(post.user, size: 40) %>
-        <%= post.user.username %>
+        <%= link_to post.user.username, user_path(post.user) %>
         <h3><%= post.title %></h3>
         <p><%= post.all_tags %></p>
       </div>
